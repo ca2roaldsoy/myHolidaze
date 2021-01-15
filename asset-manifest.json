@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/myHolidaze/static/css/main.165efd74.chunk.css",
+    "main.js": "/myHolidaze/static/js/main.19329f8a.chunk.js",
+    "main.js.map": "/myHolidaze/static/js/main.19329f8a.chunk.js.map",
+    "runtime-main.js": "/myHolidaze/static/js/runtime-main.2dfb6d1a.js",
+    "runtime-main.js.map": "/myHolidaze/static/js/runtime-main.2dfb6d1a.js.map",
+    "static/css/2.b30770e3.chunk.css": "/myHolidaze/static/css/2.b30770e3.chunk.css",
+    "static/js/2.12b30c80.chunk.js": "/myHolidaze/static/js/2.12b30c80.chunk.js",
+    "static/js/2.12b30c80.chunk.js.map": "/myHolidaze/static/js/2.12b30c80.chunk.js.map",
+    "index.html": "/myHolidaze/index.html",
+    "precache-manifest.a341db7d4135ebcf252cdcc28dadd984.js": "/myHolidaze/precache-manifest.a341db7d4135ebcf252cdcc28dadd984.js",
+    "service-worker.js": "/myHolidaze/service-worker.js",
+    "static/css/2.b30770e3.chunk.css.map": "/myHolidaze/static/css/2.b30770e3.chunk.css.map",
+    "static/css/main.165efd74.chunk.css.map": "/myHolidaze/static/css/main.165efd74.chunk.css.map",
+    "static/js/2.12b30c80.chunk.js.LICENSE.txt": "/myHolidaze/static/js/2.12b30c80.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/myHolidaze/static/media/admin_page.350e9488.jpg",
+    "static/media/accept.png": "/myHolidaze/static/media/accept.af7c6eaa.png",
+    "static/media/accept_white.png": "/myHolidaze/static/media/accept_white.ff9400da.png",
+    "static/media/bergen_blur_v4.jpg": "/myHolidaze/static/media/bergen_blur_v4.9935cac9.jpg",
+    "static/media/bg-15.jpg": "/myHolidaze/static/media/bg-15.500924b9.jpg",
+    "static/media/bryggen.jpg": "/myHolidaze/static/media/bryggen.d2ca8cc3.jpg",
+    "static/media/fløibanen_v2.jpg": "/myHolidaze/static/media/fløibanen_v2.429de792.jpg",
+    "static/media/information.png": "/myHolidaze/static/media/information.4f039f2f.png",
+    "static/media/reject_white.png": "/myHolidaze/static/media/reject_white.754085e8.png",
+    "static/media/styles.css": "/myHolidaze/static/media/revicons.2feb69cc.eot",
+    "static/media/stop.png": "/myHolidaze/static/media/stop.ae62be60.png",
+    "static/media/trolltunga_v2.jpg": "/myHolidaze/static/media/trolltunga_v2.491e1a0d.jpg",
+    "static/media/ulriken_v2.jpg": "/myHolidaze/static/media/ulriken_v2.81c2a708.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2dfb6d1a.js",
+    "static/css/2.b30770e3.chunk.css",
+    "static/js/2.12b30c80.chunk.js",
+    "static/css/main.165efd74.chunk.css",
+    "static/js/main.19329f8a.chunk.js"
+  ]
+}
