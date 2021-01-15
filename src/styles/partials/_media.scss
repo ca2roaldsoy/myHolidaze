@@ -1,0 +1,378 @@
+@import "variables";
+@import "mixins";
+
+/************** Small Screens ***************/
+@media only screen and (min-width: 576px) {
+  // home
+  .homeImgTop {
+    display: block;
+    width: 100%;
+  }
+
+  .browseAll {
+    margin-top: 50px;
+
+    &__img {
+      display: block;
+    }
+
+    &__overlay {
+      padding: 30px;
+      background: none;
+
+      &--title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: $white;
+        text-shadow: 1px 1px $black;
+      }
+
+      &--btn {
+        max-width: 100%;
+      }
+    }
+  }
+
+  // search
+  .searchContainer__title {
+    font-size: 28px;
+  }
+
+  .search__btn {
+    font-size: 20px;
+  }
+
+  // carousel
+  .carousel {
+    margin-top: 50px;
+  }
+
+  .exploreBergen {
+    margin-top: 0px;
+  }
+
+  // quality
+  .quality {
+    @include flexing(center);
+    align-items: center;
+  }
+
+  // footer
+  .footer__title {
+    padding-left: 25px;
+  }
+
+  // establishment
+  .establishment {
+    text-align: left;
+
+    &__badges {
+      justify-content: start;
+    }
+
+    &__price {
+      text-align: center;
+      padding-top: 1.6rem;
+      margin-bottom: 0;
+
+      &--old {
+        margin-bottom: 10px;
+      }
+
+      &--org {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__btn {
+      width: 75%;
+    }
+
+    &__deal {
+      margin: 0;
+      margin-top: 40px;
+    }
+  }
+
+  // establishment details
+  .establishmentDetailContainer {
+    padding: 50px 0;
+  }
+
+  .establishmentDetail {
+    display: flex;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2);
+
+    &__top {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__badges {
+      @include flexing();
+      word-wrap: normal;
+      align-items: center;
+    }
+
+    &__price {
+      @include flexing();
+      align-items: center;
+
+      &--new,
+      &--org {
+        font-size: 36px;
+        margin: 0;
+      }
+    }
+  }
+
+  // establishment admin
+  .manageEstablishments__top {
+    &--btn {
+      float: right;
+    }
+  }
+
+  // admin
+  .admin {
+    &__section--title {
+      font-size: 72px;
+    }
+  }
+
+  // page error
+  .pageError__container {
+    margin-top: 228px;
+  }
+}
+
+/************** Medium Screens ***************/
+@media only screen and (min-width: 992px) {
+  // card
+  .card-body {
+    padding: 10px;
+  }
+
+  // home browse all section
+  .browseAll__overlay {
+    &--title {
+      font-size: 2rem;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+
+    &--btn {
+      width: 250px;
+      height: 60px;
+      max-width: 100%;
+      font-size: 1.6rem;
+      width: 350px;
+    }
+  }
+
+  // establishment
+  .establishment {
+    &__deal {
+      margin-top: 25px;
+    }
+
+    &__price {
+      padding-top: 15px;
+    }
+
+    &__mapIcon {
+      margin-top: 25px;
+    }
+  }
+
+  // establishment details
+  .establishmentDetail {
+    &__top {
+      display: flex;
+      margin: 0;
+    }
+
+    &__img {
+      max-height: 520px;
+      overflow: hidden;
+      width: 100%;
+
+      &--img {
+        object-fit: cover;
+        object-position: left;
+        height: 520px;
+      }
+    }
+
+    &__badges {
+      text-align: center;
+
+      &--selfCatering,
+      &--maxGuests {
+        font-size: 16px;
+      }
+    }
+
+    &__email {
+      font-size: 16px;
+    }
+
+    &__body {
+      @include colours($white, $black);
+      width: 100%;
+    }
+
+    &__info {
+      padding: 50px 20px;
+    }
+
+    &__title {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    &__checkout {
+      align-items: center;
+      padding: 0;
+    }
+
+    &__price {
+      text-align: center;
+      margin: 0;
+      display: block;
+      height: auto;
+
+      &--discount {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      &--new,
+      &--org {
+        font-size: 40px;
+      }
+
+      &--old {
+        margin: 0;
+      }
+    }
+
+    &__btn {
+      align-items: center;
+      width: 100%;
+
+      &--text {
+        font-size: 32px;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        display: block;
+        margin: 40px auto;
+      }
+    }
+
+    &--mapIcon {
+      margin: 0;
+    }
+  }
+
+  // admin
+  .adminContent {
+    background: none;
+  }
+
+  .admin {
+    margin-top: 50px;
+    height: 100%;
+
+    &__section {
+      background-color: #343a40;
+      border: 1px solid;
+      max-height: 650px;
+
+      &--title {
+        color: $darkYellow;
+        margin-bottom: 100px;
+      }
+
+      &--link {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__img {
+      display: flex;
+      padding: 0;
+      max-height: 650px;
+    }
+  }
+
+  // enquiries
+  .enquiries {
+    &__resolveContainer {
+      @include flexing(flex-start);
+
+      & button {
+        width: auto;
+      }
+    }
+
+    &__resolve {
+      display: flex;
+
+      &--text {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+/************** Large Screens ***************/
+@media only screen and (min-width: 1200px) {
+  // place search on top of image
+  .searchContainer {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 5%;
+    background-size: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 100%;
+    height: 23.2vw;
+
+    &__title {
+      color: $white;
+      font-size: 40px;
+    }
+  }
+
+  // home browse all
+  .browseAll__overlay {
+    margin-top: 30px;
+
+    &--title {
+      margin-bottom: 80px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    &--btn {
+      font-size: 1.8rem;
+      height: 2em;
+      width: 30%;
+    }
+  }
+
+  .establishmentDetail {
+    &__price {
+      padding-top: 50px;
+      height: 250px;
+    }
+  }
+}

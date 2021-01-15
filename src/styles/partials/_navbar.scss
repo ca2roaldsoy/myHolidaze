@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+
+.navbarTop {
+  @include colours($darkYellow, $black, 0px 20px);
+  line-height: 1.1;
+  width: 100%;
+
+  &__title {
+    font-size: 48px;
+
+    &--text {
+      color: $black;
+
+      &:hover {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__link {
+    & > a {
+      margin: 10px;
+      color: $black;
+      align-items: center;
+
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// log out
+.logOut__btn {
+  margin: 2px 0 10px 0px;
+  max-width: 100px;
+  font-size: 14px;
+}

@@ -1,0 +1,218 @@
+@import "variables";
+@import "mixins";
+
+/************** Establishment ***************/
+.establishment {
+  @include centerShadow();
+  background-color: rgb(240, 240, 240);
+  line-height: 1.2;
+
+  &__img {
+    padding: 0;
+  }
+
+  &__badges {
+    @include flexing(center);
+
+    &--maxGuests {
+      @include colours(lightgrey, $black, 10px);
+    }
+
+    &--selfCatering {
+      margin: 0 2px 0 10px;
+      @include colours(lightgrey, $black, 10px);
+    }
+
+    &--infoIcon {
+      width: 25px;
+      height: 25px;
+      margin-top: 3px;
+    }
+  }
+
+  &__price {
+    padding: 10px 20px 25px 20px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    position: relative;
+
+    &--new {
+      font-size: 22px;
+    }
+
+    &--discount {
+      color: #217a0b;
+      font-size: 22px;
+    }
+
+    &--old {
+      @include priceOld();
+    }
+
+    &--org {
+      font-size: 22px;
+    }
+  }
+
+  &__mapIcon {
+    width: 35px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  &__btn {
+    width: 100%;
+    &--text {
+      color: $white;
+    }
+  }
+
+  &__deal {
+    margin: 0 auto;
+    margin-top: 40px;
+    outline: 1px solid #ff333a;
+    outline-offset: 2px;
+    outline-style: dashed;
+    width: 200px;
+  }
+}
+
+.establishmentDetailContainer,
+.establishmentDetail__body,
+.establishmentDetail__content {
+  padding: 0;
+}
+
+/************** Establishment Detail Page ***************/
+.establishmentDetail {
+  border: none;
+
+  &__top {
+    padding: 0;
+  }
+
+  &__rooms {
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed red;
+    margin: 10px 0;
+  }
+
+  &__info {
+    @include colours($darkYellow, $black, 20px 20px);
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  &__img {
+    width: 100%;
+    padding: 0;
+
+    &--img {
+      max-height: 1000px;
+      overflow: hidden;
+    }
+  }
+
+  &__badges {
+    @include colours(#d3d3d3, $black, 5px 0);
+
+    &--maxGuests {
+      @include colours(#b9b9b9, $black, 5px);
+    }
+
+    &--selfCatering {
+      margin: 5px auto;
+      @include colours(#b9b9b9, $black, 5px);
+    }
+  }
+
+  &__email {
+    font-size: 14px;
+  }
+
+  &__desc {
+    margin: 20px auto;
+  }
+
+  &__checkout {
+    align-items: center;
+    padding: 0;
+  }
+
+  &__price {
+    margin-bottom: 0;
+    @include colours(#d3d3d3, $black, 20px);
+    text-align: center;
+
+    &--old {
+      @include priceOld();
+      margin-bottom: 0px;
+      font-size: 22px;
+    }
+
+    &--new,
+    &--org {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    &--discount {
+      color: #217a0b;
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__btn {
+    @include colours($white, $black);
+    margin-bottom: 20px;
+
+    & > a {
+      &:hover {
+        text-decoration: none;
+        background-color: $blue;
+      }
+    }
+
+    &--text {
+      background-color: $darkBlue;
+      color: $white;
+      font-weight: bold;
+      height: 50px;
+      width: 100%;
+      font-size: 24px;
+    }
+  }
+  &__mapIcon {
+    margin: 0;
+    width: 35px;
+    height: auto;
+  }
+}
+
+// Back To Top
+
+.showToTopBtn {
+  display: block;
+  height: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  border-radius: 50px 50px 0 0;
+}
+
+.hideToTopBtn {
+  display: none;
+}
+
+/************** Establishment Admin Page ***************/
+.manageEstablishments__top {
+  &--btn {
+    margin: 10px auto;
+    display: block;
+  }
+}
